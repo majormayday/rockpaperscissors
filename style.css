@@ -67,9 +67,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display:flex;
     align-items:center;
     justify-content:center;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(110, 110, 110, 0.5);
     margin-top: 100px;
-    margin-bottom: 100px;
+    color:black;
 }
 
 .scoreBox{
@@ -80,18 +80,29 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 .pScore{
     display:flex;
+    font-size:large;
+    font-weight:bolder;
     border-style:solid;
     border-color:lightslategray;
     border-radius:10px;
+    margin:20px;
     flex:1;
     justify-content:center;
     align-items:center; 
+    color:black;
 }
 .cScore{
     display:flex;
     flex:1;
     justify-content:center;
     align-items:center;
+    font-size:large;
+    font-weight:bolder;
+    border-style:solid;
+    border-color:lightslategray;
+    border-radius:10px;
+    margin:20px;
+    color:black;
 } 
 
 .actions{

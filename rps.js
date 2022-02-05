@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection) {
             ((lowerPlayer == 'paper') && (lowerComputer == 'scissors')) ||
             ((lowerPlayer == 'rock') && (lowerComputer == 'paper'))){
                 cScore.textContent = parseInt(cScore.textContent) + 1;
-                dialogue.textContent='Ouch, keep your head up';
+                dialogue.textContent='Ouch, keep your head up.';
                 checkWin();
                 return;
     }
@@ -45,13 +45,14 @@ function playRound(playerSelection, computerSelection) {
 
   function checkWin(){
     if (parseInt(pScore.textContent) === 5) {
-        dialogue.textContent='You Win!';
+        
         disableGame();
+        dialogue.textContent='You Win! Press start to play again!';
         return;
     }
     else if (parseInt(cScore.textContent) === 5){
-        dialogue.textContent='Computer Wins :(';
         disableGame();
+        dialogue.textContent='Computer Wins :( Press start to play again!';
         return;
     }
   }
